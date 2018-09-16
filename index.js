@@ -12,17 +12,7 @@ const TOKEN_PATH = 'token.json';
 let tokenData;
 
 // Load client secrets from a local file.
-fs.readFile('credentials.json', (err, content) => {
-  if (err) return console.log('Error loading client secret file:', err);
-  // Authorize a client with credentials, then call the Gmail API.
-  //console.log("in read");
-//   authorize(JSON.parse(content),(err,res) => {
-//       console.log("in read"+ JSON.stringify(res));
-//       listLabels(res);
-//     listMessages("me,aldo",res);
-//   });
-    authorize(JSON.parse(content),listMessages);
-});
+
 
 /**
  * Create an OAuth2 client with the given credentials, and then execute the
@@ -30,7 +20,7 @@ fs.readFile('credentials.json', (err, content) => {
  * @param {Object} credentials The authorization client credentials.
  * @param {function} callback The callback to call with the authorized client.
  */
-function authorize(credentials, callback) {
+function authorize (credentials,company ,callback) {
   const {client_secret, client_id, redirect_uris} = credentials.installed;
   const oAuth2Client = new google.auth.OAuth2(
       client_id, client_secret, redirect_uris[0]);
@@ -40,7 +30,7 @@ function authorize(credentials, callback) {
     if (err) return getNewToken(oAuth2Client, callback);
     oAuth2Client.setCredentials(JSON.parse(token));
     tokenData = JSON.parse(token);
-    callback ("me","Aldo",oAuth2Client);
+    callback ("me",company,oAuth2Client);
     //callback(oAuth2Client);
   });
 }
@@ -151,6 +141,7 @@ function listMessages(userId, query,auth) {
                         // });
                         //let temp = res.data.payload.parts[0].body.data + res.data.payload.parts[1].body.data;
                         // /console.log(striptags(base64url.decode(temp)));
+                        console.log(emails[0]);
                         data= {
                             ...userData,
                             'emails':emails
@@ -171,3 +162,5 @@ function listMessages(userId, query,auth) {
       }
     );
   }
+  module.exports.authorize = authorize;
+  module.exports.listMessages = listMessages;

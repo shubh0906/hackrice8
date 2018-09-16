@@ -31,7 +31,7 @@ fs.readFile('credentials.json', (err, content) => {
       if (err) 
       oAuth2Client = getNewToken(oAuth2Client);
       oAuth2Client.setCredentials(JSON.parse(token));
-      console.log(" in oAuth2Client"+ oAuth2Client);
+      console.log(oAuth2Client);
       return oAuth2Client;
       //callback(oAuth2Client);
     });
