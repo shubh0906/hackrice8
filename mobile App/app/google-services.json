@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "951006187662",
+    "firebase_url": "https://ricehack2018.firebaseio.com",
+    "project_id": "ricehack2018",
+    "storage_bucket": "ricehack2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951006187662:android:302babe781882c93",
+        "android_client_info": {
+          "package_name": "com.shopiholik.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951006187662-mb0p79mgc3tgsp8se3oj7prl7e039v6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopiholik.app",
+            "certificate_hash": "4685f4892c2d86bf0d6abb87478c7a293792fb3e"
+          }
+        },
+        {
+          "client_id": "951006187662-l8bliq9a4033tlbgqpfte8hs4c28t0t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEDpCvVoYxcC3ja55K2w4JySQCrRxN9B8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951006187662-l8bliq9a4033tlbgqpfte8hs4c28t0t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

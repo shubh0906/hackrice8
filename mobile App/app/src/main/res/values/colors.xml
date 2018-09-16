@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4081</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorHome">#ffffff</color>
+    <color name="brand_name">#333333</color>
+    <color name="offer_value">#505050</color>
+    <color name="offer_details">#8c8c8c</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <!-- Primary Colors -->
+    <color name="primary">#FF4081</color>
+    <color name="primary_dark">#b92f5e</color>
+    <color name="primary_darker">#b92f5e</color>
+    <color name="accent">#000000</color>
+
+    <!-- Basic Colors -->
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+</resources>
